@@ -1,0 +1,2 @@
+# introduction to python
+python is a high level programming language developed in 1989 by Guido Van Rosson which was named after a comedy group called Montypython. Python is known for its simplistic nature which is built using C PROGRAMMING.
