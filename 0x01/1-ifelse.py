@@ -1,0 +1,10 @@
+#!/usr/bin/python3
+"""a module that handles conditional statement"""
+
+
+age = int(input("Enter your age: "))
+
+if age >= 18:
+    print("You're an adult")
+else:
+    print("You're a minor")
