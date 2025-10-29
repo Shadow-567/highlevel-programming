@@ -1,13 +1,20 @@
 #!/usr/bin/python3
 """a module that calculates the area of a traingle"""
 
+def triangle(base, height):
+    """
+       A function that contains area of a triangle
+       Args:
+           base: a value for the base of the triangle
+           height: a value for the height of the triangle
+       Return:
+           an area of a triangle 
+    """
+    return 0.5 * base * height
 
-base = int(input("Enter the base of the triangle: "))
-height = int(input("Enter the height of the triange: "))
+if __name__ == "__main__":
+    base = int(input("Enter the base of the triangle: "))
+    height = int(input("Enter the height of the triange: "))
+    area = triangle(base, height)
 
-if base <= 0 or height <= 0:
-    print("Errror: Base and height must be positive numbers")
-area = 0.5 * base * height
-print(f"Base: {base}")
-print(f"Height: {height}")
-print(f"Area = 0.5 * {base} * {height} = {area}")
+    print(f"The area of the triangle: {area}")

@@ -2,13 +2,20 @@
 """a module that calculates the area of a rectangle"""
 
 
-length = int(input("Enter the length of the rectangle: "))
-width = int(input("Enter the width of the rectangle: "))
+def rectangle(length, width):
+    """
+       A function that contains area of a rectangle
+       Args:
+           length: a value for the length of the rectangle
+           width: a value for the width of the rectangle
+       Return:
+           an area of a rectangle
+    """
+    return length * width
 
-if length <= 0 or width <= 0:
-    print("Errror: length and width must be positive numbers")
+if __name__ == "__main__":
+    length = int(input("Enter the length of the rectangle: "))
+    width = int(input("Enter the width of the rectangle: "))
+    area = rectangle(length, width)
 
-area = length * width
-print(f"length: {length}")
-print(f"Width: {width}")
-print(f"Area = {length} * {width} = {area}") 
+    print(f"The area of the rectangle: {area}")

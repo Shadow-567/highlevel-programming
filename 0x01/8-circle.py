@@ -2,9 +2,20 @@
 """a module that calculates the area of a circle"""
 
 
-radius = int(input("Enter the radius of the circle: "))
-PI = 3.142
+def circle(radius, PI):
+    """
+       A function that contains area of a triangle
+       Args:
+           radius: a value for the radius of the circle
+           PI: a constant value for the PI of the circle
+       Return:
+           an area of circle 
+    """
+    return 3.142 * radius ** 2
 
-area = PI * radius ** 2
-print(f"Radius: {radius}")
-print(f"Area = {PI} * {radius} ** 2 = {area}")
+if __name__ == "__main__":
+    radius = int(input("Enter the radius of the circle: "))
+    PI = 3.142
+    area = circle(radius, PI)
+
+    print(f"The area of the rectangle: {area}")
